@@ -1,0 +1,38 @@
+services:
+  # Client service
+  frontend:
+    build: ./frontend
+    container_name: vite-ui
+    ports:
+      - "4000:4000"
+    networks: 
+      - mern-network
+    depends_on:
+      - backend
+
+  # Server service
+  backend:
+    build: ./backend
+    container_name: node-api
+    restart: always
+    ports:
+      - "3500:3500"
+    networks: 
+      - mern-network
+    depends_on:
+      - mongodb
+
+  # Database service
+  mongodb:
+    image: mongo:latest
+    container_name: mongo-db
+    ports:
+      - "27017:27017"
+    networks: 
+      - mern-network
+    volumes:
+      - ./mongo-backup:/data/db
+
+networks: 
+  mern-network:
+    driver: bridge
