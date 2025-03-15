@@ -1,20 +1,41 @@
+# Introduction
+
+This is a copy of my 2024 UNSW capstone team project. Inspired by the capstone project course itself, this is a web application that helps schools manage course data, and group students into teams to take on available course projects.
+
+Summary of functionality: 
+* **Students** → Add skills to own profile, join course pages created by admins, form groups with other students.
+* **Course admins & other academics** → Create course pages, upload course projects, assign groups to projects based off skill compatibility. Admins can opt to use the matching algorithm or manually assign groups to projects.
+
+Written in Vite + JS + MongoDB. Containerized with Docker.
+
+## Individual Contributions
+
+I was the backend developer for this project. I designed the API, database system, and backend testing suites.
+
+## OpenAI keys
+We were required to integrate LLM capabilities into our capstone project. We used this for skill analysis in our system. 
+
+OpenAI API keys have been removed from in this version: in `backend/algos/group_recommending/project_scp.js` and `backend/algos/group_recommending/student_scp.js`. The skill analysis system will not work without valid API key replacements.
+
+Original `README.md` text as below.
+
 # Installation Manual 
 
 1. To run this site, you must have the docker desktop app installed and running 
 
 2. In a terminal window, ensure you are in the root folder of the source code, titled captone-project-3900t11aerror404 
 
-3. Run the command ‘docker compose build’ (without the quotation marks). This may take a few moments 
+3. Run the command `docker compose build` (without the quotation marks). This may take a few moments 
 
-4. Once this is complete, run the command ‘docker compose up –d'. Again, this may take a few moments 
+4. Once this is complete, run the command `docker compose up –d`. Again, this may take a few moments 
 
-5. In a web browser, open ‘http://localhost:4000’ 
+5. In a web browser, open `http://localhost:4000` 
 
 6. Click on ‘Go to Login In’ then ‘Sign Up’ 
 
 7. Enter details to register a site admin account 
 
-8. When you wish to shut down the server, run ‘docker compose down’ in the terminal. 
+8. When you wish to shut down the server, run `docker compose down` in the terminal. 
 
 # User Guide 
 
@@ -64,6 +85,29 @@ They can also choose to create a group. If they create a public group, any other
 
 The group owner can also set up to seven project preferences here, and once projects have been assigned a group’s assigned project will appear on their group page. 
 
-On the projects page, students can see all the projects which have been created in the course and select a project to view its details and the clients’ contact details. They can also see a comparison of their group’s skills with the project’s required skills. 
+On the projects page, students can see all the projects which have been created in the course and select a project to view its details and the clients’ contact details. They can also see a comparison of their group’s skills with the project’s required skills.
 
- [![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-718a45dd9cf7e7f842a935f5ebbe5719a5e09af4491e668f4dbf3b35d5cca122.svg)](https://classroom.github.com/online_ide?assignment_repo_id=15162823&assignment_repo_type=AssignmentRepo)
+# Screenshots
+1. __Login Page__
+   
+   ![image](https://github.com/user-attachments/assets/1638189c-9a19-4173-a76a-9a71b76b589c)
+
+2. __Dashboard__
+
+   ![image](https://github.com/user-attachments/assets/45b79a4f-946c-49aa-b512-d47f7c7ae9b3)
+
+3. __Course Page Creation__
+
+   ![image](https://github.com/user-attachments/assets/cfa26a99-7979-432a-be78-969f2f07760e)
+
+4. __Student Page__
+
+   ![image](https://github.com/user-attachments/assets/f77a45ff-d14e-4834-baea-c112c8f542df)
+
+5. __Group-Project Assignments__
+ 
+   ![image](https://github.com/user-attachments/assets/1bac9640-333b-40fc-a540-4cd9ac23b97a)
+
+
+
+
