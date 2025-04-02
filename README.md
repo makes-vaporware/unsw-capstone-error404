@@ -17,6 +17,29 @@ We were required to integrate LLM capabilities into our capstone project. We use
 
 OpenAI API keys have been removed from in this version: in `backend/algos/group_recommending/project_scp.js` and `backend/algos/group_recommending/student_scp.js`. The skill analysis system will not work without valid API key replacements.
 
+## Screenshots
+1. __Login Page__
+   
+   ![image](https://github.com/user-attachments/assets/1638189c-9a19-4173-a76a-9a71b76b589c)
+
+2. __Dashboard__
+
+   ![image](https://github.com/user-attachments/assets/45b79a4f-946c-49aa-b512-d47f7c7ae9b3)
+
+3. __Course Page Creation__
+
+   ![image](https://github.com/user-attachments/assets/cfa26a99-7979-432a-be78-969f2f07760e)
+
+4. __Student Page__
+
+   ![image](https://github.com/user-attachments/assets/f77a45ff-d14e-4834-baea-c112c8f542df)
+
+5. __Group-Project Assignments__
+ 
+   ![image](https://github.com/user-attachments/assets/1bac9640-333b-40fc-a540-4cd9ac23b97a)
+
+---
+
 Original `README.md` text as below.
 
 # Installation Manual 
@@ -86,28 +109,3 @@ They can also choose to create a group. If they create a public group, any other
 The group owner can also set up to seven project preferences here, and once projects have been assigned a group’s assigned project will appear on their group page. 
 
 On the projects page, students can see all the projects which have been created in the course and select a project to view its details and the clients’ contact details. They can also see a comparison of their group’s skills with the project’s required skills.
-
-# Screenshots
-1. __Login Page__
-   
-   ![image](https://github.com/user-attachments/assets/1638189c-9a19-4173-a76a-9a71b76b589c)
-
-2. __Dashboard__
-
-   ![image](https://github.com/user-attachments/assets/45b79a4f-946c-49aa-b512-d47f7c7ae9b3)
-
-3. __Course Page Creation__
-
-   ![image](https://github.com/user-attachments/assets/cfa26a99-7979-432a-be78-969f2f07760e)
-
-4. __Student Page__
-
-   ![image](https://github.com/user-attachments/assets/f77a45ff-d14e-4834-baea-c112c8f542df)
-
-5. __Group-Project Assignments__
- 
-   ![image](https://github.com/user-attachments/assets/1bac9640-333b-40fc-a540-4cd9ac23b97a)
-
-
-
-
